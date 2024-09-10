@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    .list-with-dots {
+      list-style-type: disc; /* Ensures dots are used as bullets */
+    }
+    .btn {
+      background: rgb(25, 129, 226);
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-align: center;
+      display: block;
+      color: white;
+    }
+    .btn:hover {
+      background: rgb(20, 82, 217);
+    }
+  </style>
+  <body>
+    <br />
+    <div class="flex justify-center space-x-4 mb-4">
+      <!-- Anchor tags for filtering -->
+      <a href="#" class="filter-btn" data-filter="all">Show All</a>
+      <a href="#" class="filter-btn" data-filter="web-designing"
+        >Web Designing</a
+      >
+      <a href="#" class="filter-btn" data-filter="web-development"
+        >Web Development</a
+      >
+    </div>
+
+    <!-- Card container -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Web Designing Card -->
+      <div
+        class="card web-designing p-4 bg-white shadow-md rounded opacity-100 scale-100 translate-y-0 transition-all duration-700 ease-in-out"
+      >
+        <h2 class="font-bold text-lg">Web Designing Card 1</h2>
+        <p class="text-gray-600">Some description about web designing.</p>
+      </div>
+
+      <!-- Web Development Card -->
+      <div
+        class="card web-development p-4 bg-white shadow-md rounded opacity-100 scale-100 translate-y-0 transition-all duration-700 ease-in-out"
+      >
+        <h2 class="font-bold text-lg">Web Development Card 1</h2>
+        <p class="text-gray-600">Some description about web development.</p>
+      </div>
+
+      <!-- Web Designing Card -->
+      <div
+        class="card web-designing p-4 bg-white shadow-md rounded opacity-100 scale-100 translate-y-0 transition-all duration-700 ease-in-out"
+      >
+        <h2 class="font-bold text-lg">Web Designing Card 2</h2>
+        <p class="text-gray-600">Some description about web designing.</p>
+      </div>
+
+      <!-- Web Development Card -->
+      <div
+        class="card web-development p-4 bg-white shadow-md rounded opacity-100 scale-100 translate-y-0 transition-all duration-700 ease-in-out"
+      >
+        <h2 class="font-bold text-lg">Web Development Card 2</h2>
+        <p class="text-gray-600">Some description about web development.</p>
+      </div>
+    </div>
+
+    <!-- Card container -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Web Designing Card -->
+      <div
+        class="card web-designing p-4 bg-white shadow-md rounded opacity-100 transition-opacity duration-500 ease-in-out"
+      >
+        <h2 class="font-bold text-lg">Web Designing Card 1</h2>
+        <p class="text-gray-600">Some description about web designing.</p>
+      </div>
+
+      <!-- Web Development Card -->
+      <div
+        class="card web-development p-4 bg-white shadow-md rounded opacity-100 transition-opacity duration-500 ease-in-out"
+      >
+        <h2 class="font-bold text-lg">Web Development Card 1</h2>
+        <p class="text-gray-600">Some description about web development.</p>
+      </div>
+
+      <!-- Web Designing Card -->
+      <div
+        class="card web-designing p-4 bg-white shadow-md rounded opacity-100 transition-opacity duration-500 ease-in-out"
+      >
+        <h2 class="font-bold text-lg">Web Designing Card 2</h2>
+        <p class="text-gray-600">Some description about web designing.</p>
+      </div>
+
+      <!-- Web Development Card -->
+      <div
+        class="card web-development p-4 bg-white shadow-md rounded opacity-100 transition-opacity duration-500 ease-in-out"
+      >
+        <h2 class="font-bold text-lg">Web Development Card 2</h2>
+        <p class="text-gray-600">Some description about web development.</p>
+      </div>
+    </div>
+
+    <!-- Card container -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Web Designing Card -->
+      <div class="card web-designing p-4 bg-white shadow-md rounded">
+        <h2 class="font-bold text-lg">Web Designing Card 1</h2>
+        <p class="text-gray-600">Some description about web designing.</p>
+      </div>
+
+      <!-- Web Development Card -->
+      <div class="card web-development p-4 bg-white shadow-md rounded">
+        <h2 class="font-bold text-lg">Web Development Card 1</h2>
+        <p class="text-gray-600">Some description about web development.</p>
+      </div>
+
+      <!-- Web Designing Card -->
+      <div class="card web-designing p-4 bg-white shadow-md rounded">
+        <h2 class="font-bold text-lg">Web Designing Card 2</h2>
+        <p class="text-gray-600">Some description about web designing.</p>
+      </div>
+
+      <!-- Web Development Card -->
+      <div class="card web-development p-4 bg-white shadow-md rounded">
+        <h2 class="font-bold text-lg">Web Development Card 2</h2>
+        <p class="text-gray-600">Some description about web development.</p>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="container mx-auto">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 lg:gap-10 px-5 md:px-6 lg:px-10"
+      >
+        <div class="group relative overflow-hidden shadow-xl rounded-2xl">
+          <div class="first-child overflow-hidden flex justify-center">
+            <div
+              class="w-1/2 shadow-xl hover:shadow-2xl"
+              style="border-radius: 100px"
+            >
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/pn-images.appspot.com/o/home-%3Eclient%2Fe1.jpg?alt=media&token=e6e44a43-8e57-4d03-a8c5-5c120f33f9f0"
+                alt="Image"
+                class="transform transition-transform duration-1000 ease-in-out group-hover:scale-110"
+              />
+            </div>
+          </div>
+          <div class="second-child py-5 px-10">
+            <div class="text-justify">
+              <h2 class="lg:text-2xl text-center font-semibold">
+                Collaborative <br />
+                Spirit
+              </h2>
+              <h3>
+                We believe in developing true partnerships and making clients
+                happy.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container mx-auto md:px-8 px-4">
+      <div class="md:flex justify-between items-center space-y-5 lg:space-x-0">
+        <div class="w-full md:w-2/5 font-semibold md:text-left text-center">
+          <p class="lg:text-3xl md:text-2xl">Technologies</p>
+          <p class="text-[#009df2] lg:text-5xl md:text-4xl text-3xl">
+            We works on...
+          </p>
+        </div>
+        <div class="w-full md:w-3/5 flex md:justify-end justify-center">
+          <ul
+            class="uppercase flex lg:gap-10 md:gap-5 gap-2 text-[13px] lg:text-[18px] md:text-[16px] text-center font-semibold"
+          >
+            <li class="text-black hover:text-[#009df2]">show all</li>
+            <li class="text-black hover:text-[#009df2]">web designing</li>
+            <li class="text-black hover:text-[#009df2]">web develpoment</li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <div class="w-full">
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 md:gap-6 gap-3"
+        >
+          <div
+            class="group relative overflow-hidden shadow-2xl rounded-2xl py-4 md:px-8 px-2"
+          >
+            <div class="first-child overflow-hidden flex justify-center">
+              <img
+                src="../src/public/img/html.png"
+                alt=""
+                class="transform transition-transform duration-1000 ease-in-out group-hover:scale-105 w-[60%]"
+              />
+            </div>
+            <div class="second-child text-center uppercase mt-4">
+              <h2 class="md:text-2xl text-xl font-bold">HTML 5</h2>
+              <p
+                class="lg:text-lg md:text-[13px] text-[12px] transition-all group-hover:underline group-hover:text-[#6ba1ff] font-semibold text-blue-600"
+              >
+                Markup language for Web pages.
+              </p>
+            </div>
+          </div>
+          <div
+            class="group relative overflow-hidden shadow-2xl rounded-2xl py-4 md:px-8 px-2"
+          >
+            <div class="first-child overflow-hidden flex justify-center">
+              <img
+                src="../src/public/img/html.png"
+                alt=""
+                class="transform transition-transform duration-1000 ease-in-out group-hover:scale-105 w-[60%]"
+              />
+            </div>
+            <div class="second-child text-center uppercase mt-4">
+              <h2 class="md:text-2xl text-xl font-bold">HTML 5</h2>
+              <p
+                class="lg:text-lg md:text-[13px] text-[12px] transition-all group-hover:underline group-hover:text-[#6ba1ff] font-semibold text-blue-600"
+              >
+                Markup language for Web pages.
+              </p>
+            </div>
+          </div>
+          <div
+            class="group relative overflow-hidden shadow-2xl rounded-2xl py-4 md:px-8 px-2"
+          >
+            <div class="first-child overflow-hidden flex justify-center">
+              <img
+                src="../src/public/img/html.png"
+                alt=""
+                class="transform transition-transform duration-1000 ease-in-out group-hover:scale-105 w-[60%]"
+              />
+            </div>
+            <div class="second-child text-center uppercase mt-4">
+              <h2 class="md:text-2xl text-xl font-bold">HTML 5</h2>
+              <p
+                class="lg:text-lg md:text-[13px] text-[12px] transition-all group-hover:underline group-hover:text-[#6ba1ff] font-semibold text-blue-600"
+              >
+                Markup language for Web pages.
+              </p>
+            </div>
+          </div>
+          <div
+            class="group relative overflow-hidden shadow-2xl rounded-2xl py-4 md:px-8 px-2"
+          >
+            <div class="first-child overflow-hidden flex justify-center">
+              <img
+                src="../src/public/img/html.png"
+                alt=""
+                class="transform transition-transform duration-1000 ease-in-out group-hover:scale-105 w-[60%]"
+              />
+            </div>
+            <div class="second-child text-center uppercase mt-4">
+              <h2 class="md:text-2xl text-xl font-bold">HTML 5</h2>
+              <p
+                class="lg:text-lg md:text-[13px] text-[12px] transition-all group-hover:underline group-hover:text-[#6ba1ff] font-semibold text-blue-600"
+              >
+                Markup language for Web pages.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- second -->
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-8 container mx-auto gap-8"
+    >
+      <div class="group relative overflow-hidden shadow-xl rounded-2xl">
+        <div class="first-child overflow-hidden">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/pn-images.appspot.com/o/home-%3Eclient%2Fe1.jpg?alt=media&token=e6e44a43-8e57-4d03-a8c5-5c120f33f9f0"
+            alt="Image"
+            class="transform transition-transform duration-1000 ease-in-out group-hover:scale-110"
+          />
+        </div>
+        <div class="second-child py-5 px-10">
+          <div class="transition-all group-hover:underline text-justify">
+            <h2 class="lg:text-2xl text-center font-semibold">
+              Workshop by Senior <br />
+              Advisor
+            </h2>
+            <br />
+            <ul class="font-light list-with-dots text-[14px] space-y-1">
+              <li>
+                Workshop was enacted by Vaibhav Shrivastava, who is Product
+                Owner at Xiaomi, China.
+              </li>
+              <li>
+                He is our Senior Advisor, he conducted the workshop in which he
+                holistically motivated the team of PN INFOSYS.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn w-[40%] mx-auto my-8">Read More...</div>
+      </div>
+      <div class="group relative overflow-hidden shadow-xl rounded-2xl">
+        <div class="first-child overflow-hidden">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/pn-images.appspot.com/o/home-%3Eclient%2Fe1.jpg?alt=media&token=e6e44a43-8e57-4d03-a8c5-5c120f33f9f0"
+            alt="Image"
+            class="transform transition-transform duration-1000 ease-in-out group-hover:scale-110"
+          />
+        </div>
+        <div class="second-child py-5 px-10">
+          <div class="transition-all group-hover:underline text-justify">
+            <h2 class="lg:text-2xl text-center font-semibold">
+              Workshop by Senior <br />
+              Advisor
+            </h2>
+            <br />
+            <ul class="font-light list-with-dots text-[14px] space-y-1">
+              <li>
+                Workshop was enacted by Vaibhav Shrivastava, who is Product
+                Owner at Xiaomi, China.
+              </li>
+              <li>
+                He is our Senior Advisor, he conducted the workshop in which he
+                holistically motivated the team of PN INFOSYS.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn w-[40%] mx-auto my-8">Read More...</div>
+      </div>
+      <div class="group relative overflow-hidden shadow-xl rounded-2xl">
+        <div class="first-child overflow-hidden">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/pn-images.appspot.com/o/home-%3Eclient%2Fe1.jpg?alt=media&token=e6e44a43-8e57-4d03-a8c5-5c120f33f9f0"
+            alt="Image"
+            class="transform transition-transform duration-1000 ease-in-out group-hover:scale-110"
+          />
+        </div>
+        <div class="second-child py-5 px-10">
+          <div class="transition-all group-hover:underline text-justify">
+            <h2 class="lg:text-2xl text-center font-semibold">
+              Workshop by Senior <br />
+              Advisor
+            </h2>
+            <br />
+            <ul class="font-light list-with-dots text-[14px] space-y-1">
+              <li>
+                Workshop was enacted by Vaibhav Shrivastava, who is Product
+                Owner at Xiaomi, China.
+              </li>
+              <li>
+                He is our Senior Advisor, he conducted the workshop in which he
+                holistically motivated the team of PN INFOSYS.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn w-[40%] mx-auto my-8">Read More...</div>
+      </div>
+      <div class="group relative overflow-hidden shadow-xl rounded-2xl">
+        <div class="first-child overflow-hidden">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/pn-images.appspot.com/o/home-%3Eclient%2Fe1.jpg?alt=media&token=e6e44a43-8e57-4d03-a8c5-5c120f33f9f0"
+            alt="Image"
+            class="transform transition-transform duration-1000 ease-in-out group-hover:scale-110"
+          />
+        </div>
+        <div class="second-child py-5 px-10">
+          <div class="transition-all group-hover:underline text-justify">
+            <h2 class="lg:text-2xl text-center font-semibold">
+              Workshop by Senior <br />
+              Advisor
+            </h2>
+            <br />
+            <ul class="font-light list-with-dots text-[14px] space-y-1">
+              <li>
+                Workshop was enacted by Vaibhav Shrivastava, who is Product
+                Owner at Xiaomi, China.
+              </li>
+              <li>
+                He is our Senior Advisor, he conducted the workshop in which he
+                holistically motivated the team of PN INFOSYS.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn w-[40%] mx-auto my-8">Read More...</div>
+      </div>
+      <div class="group relative overflow-hidden shadow-xl rounded-2xl">
+        <div class="first-child overflow-hidden">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/pn-images.appspot.com/o/home-%3Eclient%2Fe1.jpg?alt=media&token=e6e44a43-8e57-4d03-a8c5-5c120f33f9f0"
+            alt="Image"
+            class="transform transition-transform duration-1000 ease-in-out group-hover:scale-110"
+          />
+        </div>
+        <div class="second-child py-5 px-10">
+          <div class="transition-all group-hover:underline text-justify">
+            <h2 class="lg:text-2xl text-center font-semibold">
+              Workshop by Senior <br />
+              Advisor
+            </h2>
+            <br />
+            <ul class="font-light list-with-dots text-[14px] space-y-1">
+              <li>
+                Workshop was enacted by Vaibhav Shrivastava, who is Product
+                Owner at Xiaomi, China.
+              </li>
+              <li>
+                He is our Senior Advisor, he conducted the workshop in which he
+                holistically motivated the team of PN INFOSYS.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn w-[40%] mx-auto my-8">Read More...</div>
+      </div>
+      <div class="group relative overflow-hidden shadow-xl rounded-2xl">
+        <div class="first-child overflow-hidden">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/pn-images.appspot.com/o/home-%3Eclient%2Fe1.jpg?alt=media&token=e6e44a43-8e57-4d03-a8c5-5c120f33f9f0"
+            alt="Image"
+            class="transform transition-transform duration-1000 ease-in-out group-hover:scale-110"
+          />
+        </div>
+        <div class="second-child py-5 px-10">
+          <div class="transition-all group-hover:underline text-justify">
+            <h2 class="lg:text-2xl text-center font-semibold">
+              Workshop by Senior <br />
+              Advisor
+            </h2>
+            <br />
+            <ul class="font-light list-with-dots text-[14px] space-y-1">
+              <li>
+                Workshop was enacted by Vaibhav Shrivastava, who is Product
+                Owner at Xiaomi, China.
+              </li>
+              <li>
+                He is our Senior Advisor, he conducted the workshop in which he
+                holistically motivated the team of PN INFOSYS.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn w-[40%] mx-auto my-8">Read More...</div>
+      </div>
+    </div>
+    <br />
+  </body>
+  <script>
+    document.querySelectorAll(".filter-btn").forEach((link) => {
+      link.addEventListener("click", function (event) {
+        // Prevent the default link behavior
+        event.preventDefault();
+
+        const filter = this.getAttribute("data-filter");
+
+        // Remove active class from all links
+        document.querySelectorAll(".filter-btn").forEach((btn) => {
+          btn.classList.remove("bg-blue-500", "text-white");
+          btn.classList.add("bg-gray-300", "text-black");
+        });
+
+        // Add active class to clicked link
+        this.classList.remove("bg-gray-300", "text-black");
+        this.classList.add("bg-blue-500", "text-white");
+
+        // Filter cards with smooth transitions
+        document.querySelectorAll(".card").forEach((card, index) => {
+          if (filter === "all") {
+            // Apply a slight delay to each card for staggered effect
+            setTimeout(() => {
+              card.classList.remove(
+                "opacity-0",
+                "scale-90",
+                "translate-y-8",
+                "hidden"
+              );
+              card.classList.add("opacity-100", "scale-100", "translate-y-0");
+            }, index * 100); // Stagger transition based on card index
+          } else if (!card.classList.contains(filter)) {
+            // Hide the cards smoothly
+            setTimeout(() => {
+              card.classList.add("opacity-0", "scale-90", "translate-y-8");
+              setTimeout(() => card.classList.add("hidden"), 700); // Wait for transition to complete before hiding
+            }, index * 100); // Stagger transition
+          } else {
+            // Show filtered cards smoothly
+            setTimeout(() => {
+              card.classList.remove("hidden");
+              setTimeout(() => {
+                card.classList.remove("opacity-0", "scale-90", "translate-y-8");
+                card.classList.add("opacity-100", "scale-100", "translate-y-0");
+              }, 0);
+            }, index * 100); // Stagger transition
+          }
+        });
+      });
+    });
+  </script>
+</html>
